@@ -16,6 +16,5 @@ interface TodoDao {
     @Query("SELECT * FROM ToDo")
     fun getAllTodoItems():List<ToDo>
 
-    @Query("SELECT * FROM ToDo WHERE id=id")
-    fun getOne(id:Int):ToDo
+
 }

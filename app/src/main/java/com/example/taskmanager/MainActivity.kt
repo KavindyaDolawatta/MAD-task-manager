@@ -1,5 +1,6 @@
 package com.example.taskmanager
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.text.InputType
 import android.widget.Button
@@ -21,13 +22,15 @@ class MainActivity : AppCompatActivity() {
     private lateinit var adapter: ToDoAdapter
     private lateinit var viewModel: MainActivityData
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         val recyclerView:RecyclerView = findViewById(R.id.rvTodoList)
         val repository =TodoRepository(TodoDatabase.getInstance(this))
 
-        val viewModel = ViewModelProvider(this)[MainActivityData::class.java]
+         viewModel = ViewModelProvider(this)[MainActivityData::class.java]
 
 
         viewModel.data.observe(this){
@@ -62,7 +65,6 @@ class MainActivity : AppCompatActivity() {
 
 
         builder.setPositiveButton("OK") { dialog, which ->
-// Get the input text and display a Toast message
             val item = input.text.toString()
             CoroutineScope(Dispatchers.IO).launch {
                 repository.insert(ToDo(item))

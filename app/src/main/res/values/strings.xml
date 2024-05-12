@@ -3,4 +3,8 @@
     <string name="tvTitle">My Task List</string>
     <string name="btnAddItem">Add Task +</string>
     <string name="alertTitle">Enter new task toadd:</string>
+    <string name="write_about_your_day">Manage your day to day tasks</string>
+    <string name="capture_and_reflect_on_the_highlights_of_your_day_with_ease_and_express_your_thoughts">Easy to plan your day with Task Manager. You can add upcoming tasks, view saved tasks , and delete complete tasks fron the interface.\n</string>
+    <string name="button1">Get started</string>
+    <string name="button9">Get started</string>
 </resources>

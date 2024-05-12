@@ -13,7 +13,8 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-class ToDoAdapter(items:List<ToDo>, repository: TodoRepository, viewModel:MainActivityData): RecyclerView.Adapter<ToDoViewHolder>() {
+class ToDoAdapter(items:List<ToDo>, repository: TodoRepository,
+                  viewModel:MainActivityData): RecyclerView.Adapter<ToDoViewHolder>() {
 
     var context: Context? = null
     val items = items
