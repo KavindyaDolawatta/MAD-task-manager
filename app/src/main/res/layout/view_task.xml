@@ -10,15 +10,22 @@
         android:id="@+id/cbTodo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="8"
+        android:layout_weight="9"
         android:backgroundTint="#009688"
         android:text="CheckBox"
-        android:textSize="16sp" />
+        android:textSize="20sp" />
 
+    <ImageView
+        android:id="@+id/ivEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/left_24" />
     <ImageView
         android:id="@+id/ivDelete"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_weight="1"
         app:srcCompat="@drawable/backspace_24" />
+
 </LinearLayout>
